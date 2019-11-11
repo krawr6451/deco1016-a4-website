@@ -1,0 +1,146 @@
+body{
+  background-color:#007bff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    
+  }
+  
+.flex-column {
+    text-align: center;
+    margin-right: -650px;
+    margin-left: -650px;
+  }
+
+  .flex-column img {
+    width: 22%;
+    margin-top: 0px;
+    border-radius: 50%
+    
+  }
+
+  .flex-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0em;
+    margin-right: 400px;
+    margin-left: 400px;
+  }
+
+  h3{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  .text{
+    width: 20%;
+    font-weight: 300;
+    font-family: 'Montserrat', 'sans-serif';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .completion-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  h2{
+    padding-bottom: 0.5em;
+  }
+
+
+  .done{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+#blue-logo{
+  display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+  }
+
+#yellow-arrow{
+  display: block;
+  width: 8%;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+#yellow-arrow{
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+
+@keyframes fadein{
+  0% {
+    opacity: 0%;
+    transform:translateY(-25%)
+  }
+
+  25%{
+    opacity: 25%;
+    transform: translateY(0%);
+  }
+
+  35% {
+    opacity: 50%;
+    transform: translateY(-15%);
+  }
+
+  50%{
+    opacity:75%;
+    transform: translateY(0%);
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+.completion-text{
+  display: block;
+  text-align: center;
+}
+
+.done1{
+  font-style: italic;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: rgb(255, 162, 0);
+}
+
+.done2{
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: inherit;
+  font-size: 1.5em;
+  color: #fff;
+  
+}
+  

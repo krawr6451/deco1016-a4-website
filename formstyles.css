@@ -1,0 +1,463 @@
+
+/* global */
+
+.container {
+    width: 100%; (percentage makes it responsive)
+    margin: auto;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+.text-container{
+    width: 100%; (percentage makes it responsive)
+    margin: auto;
+    margin-top: -15px;
+    padding: 0 0 0 75px;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+}
+
+
+input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    border-radius: 40px; 
+    width: 250px;
+    height: 25px;
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 0px;
+}
+
+/* header + logo */
+
+header{
+    color: #989898;
+    min-height: 5px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+header p{
+    float: left;
+    padding: 0 0 0 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    font-size: 12px;
+}
+
+header ul{
+    float: right;
+    color: #989898;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+header a:hover{
+    font-weight: bold;
+    color: #007bff;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+.logo{
+    float: left;
+    width: 30%;
+    padding: 25px 0 0 25px;
+}
+
+/* Form - Landing Page buttons */
+
+.container-middle button{
+  background-color: #007bff;
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+  border: none;
+}
+
+.container-middle #buttons a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+#buttons{
+  padding: 25px 0 0 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Button animation */
+
+.submit-button:hover{
+  animation-duration: 0.6s;
+  animation-name: pop;
+}
+
+@keyframes pop{
+  0%{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+  50%{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+a.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+/* body */
+
+.home a{
+    padding: 25px 0px 0 75px;
+    color: #989898;
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
+
+}
+.home a:hover{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1{
+    padding: 0 0 0 75px;
+    font-size: 27px;
+    color: rgb(255, 162, 0);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Activate{
+    color:#007bff;
+}
+
+h2{
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: rgb(138, 138, 138);
+}
+
+.google-button{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -10px;
+    padding-bottom: 25px;
+    width: 5%;
+}
+
+.submit-button{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -50px;
+    width: 7%;
+}
+
+.container button{
+    background-color: #007bff;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
+#buttons{
+    padding: 25px 0 0 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Aligning left and right column in a row */
+.column1{
+  float:left;
+  clear: both;
+  margin-top: 25px;
+  width: 50%;
+}
+
+.column2{
+  float: right;
+  margin-top: -100px;
+  margin-right: -50px;
+  width: 50%;
+}
+.container-middle:after{
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Column of Illustrations */
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+}
+
+.flex-row {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.txtbox{
+  width: 30%;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #007bff;
+  padding-top: 75px;
+  padding-right: 25px;
+}
+
+/* International Phone Input */
+.iti {
+    position: relative;
+    display: inline-block; 
+}
+
+.iti * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+}
+
+.iti__hide {
+  display: none; 
+}
+
+.iti__v-hide {
+  visibility: hidden; 
+}
+
+.iti input, .iti input[type=text], .iti input[type=tel] {
+  position: relative;
+  z-index: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-right: 36px;
+  margin-right: 0; 
+}
+
+.iti__flag-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1px; 
+}
+
+.iti__selected-flag {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 6px 0 8px; 
+}
+
+.iti__arrow {
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555; 
+}
+
+  .iti__arrow--up {
+    border-top: none;
+    border-bottom: 4px solid #555; }
+
+.iti__country-list {
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 0 -1px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border: 1px solid #CCC;
+  white-space: nowrap;
+  max-height: 200px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; 
+}
+
+.iti__country-list--dropup {
+  bottom: 100%;
+  margin-bottom: -1px; 
+}
+
+    
+@media (max-width: 500px) {
+  .iti__country-list {
+    white-space: normal; 
+  } 
+}
+
+.iti__divider {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #CCC; 
+}
+
+.iti__country {
+  padding: 5px 10px;
+  outline: none; 
+}
+
+.iti__dial-code {
+  color: #999; 
+}
+
+.iti__country.iti__highlight {
+  background-color: rgba(0, 0, 0, 0.05); 
+}
+
+.iti__flag-box, .iti__country-name, .iti__dial-code {
+  vertical-align: middle; 
+}
+
+.iti__flag-box, .iti__country-name {
+  margin-right: 6px; 
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+  padding-right: 6px;
+  padding-left: 52px;
+  margin-left: 0; 
+}
+
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+  right: auto;
+  left: 0; 
+}
+
+.iti--allow-dropdown .iti__flag-container:hover {
+  cursor: pointer; 
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: rgba(0, 0, 0, 0.05); 
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+  margin-left: 6px; 
+}
+
+.iti--container {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  z-index: 1060;
+  padding: 1px; 
+}
+
+.iti--container:hover {
+  cursor: pointer; 
+}
+
+.iti-mobile .iti--container {
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  position: fixed; 
+}
+
+.iti-mobile .iti__country-list {
+  max-height: 100%;
+  width: 100%; 
+}
+
+.iti-mobile .iti__country {
+  padding: 10px 10px;
+  line-height: 1.5em; 
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-size: 5652px 15px; 
+  } 
+}
+
+/* Media - mobile sizing */
+
+@media screen and (max-width: 769px){
+  .logo {
+    width: 50%;
+  }
+
+  header p {
+    font-size: 0.5em;
+  }
+  header ul {
+    font-size: 0.8em;
+  }
+
+  .column1 {
+    overflow: hidden;
+  }
+  .column2 {
+    overflow: hidden;
+    margin-top: 0px;
+  }
+
+  .flex-box {
+    display: block;
+    width: 100%;
+    padding: -100px -500px 0 -100px;
+  }
+
+  .flex-row {
+    padding: 0 0 0 0;
+  }
+
+  .txtbox {
+    display: block;
+    width: 25%;
+    font-size: 0.5em;
+  }
+}
+  

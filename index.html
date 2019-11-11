@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trip.com | Rewards</title>
+    <link rel="stylesheet" type="text/css" href="formstyles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Roboto:400,700,900&display=swap');
+        /* Manually importing Montserrat and Roboto Fonts */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+        <!--Placing all elements into one container then separating into 2 columns to align the illustration images on the right with 
+        the form input on the left-->
+            <nav>
+            <!--Navigation header bar which would be linked to its respective pages-->
+                <ul>
+                    <a><li>ENG</li></a>
+                    <a><li>AUD</li></a>
+                    <a><li>Points</li></a>
+                    <a><li>Account</li></a>
+                </ul>
+                <p>
+                    <a>Download Trip.com App for exclusive offers!</a>
+                    <!--Would be linked to the download site for the Trip.com App (google store/apple store)-->
+                </p>
+            </nav>
+        </div>
+    </header>
+
+  
+    <img class="logo" src="logo.png" alt="Trip Logo">
+
+
+        <!--Dividing container into 2 columns, first column contains Title, sign in and sign up buttons-->
+ <div class="container-middle">
+            <div class="column1">
+            <p class="home"> <a href="https://au.trip.com/?locale=en_au"> < Home</a></p>
+            <h1><span class="Activate">Activate</span> Rewards</h1>
+            <!--Setting span element so that I can have different colours for both words-->
+            <section id="buttons">
+                <button><a class="btn" href="signinpage.html">Sign In</a></button><br>
+                <button><a class="btn" href="signuppage.html">Sign Up</a></button>
+            </section>
+            </div>
+        
+    </section>
+
+<!--Setting second column in a flex box and with individual classes so that I can align the images with the texts-->
+    <div class="column2">
+        <div class="flex-box">
+                <div class="txtbox"><p>Over <strong>1.2 Million</strong> choices of Hotels</p>
+                </div>
+                <img class="flex-row" src="illustration1copy.png" alt="illustration1">                         
+            </div>
+            <div class="flex-box">   
+                    <div class="txtbox"><p>Great <strong>Daily Deals</strong> and <strong>Low Prices</strong> on Fares and Tickets</p>  
+                    </div>
+                    <img class="flex-row" src="illustration2.png" alt="illustration2">
+            </div>
+            <div class="flex-box">            
+                <div class="txtbox"><p><strong>No Extra</strong> Credit Card or Booking <strong>Fees</strong></p>
+                </div> 
+                <img class="flex-row" src="illustration3.png" alt="illustration3">                        
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+            
+</body>
+</html>
